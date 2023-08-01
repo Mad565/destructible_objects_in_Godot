@@ -1,2 +1,2 @@
 # Breakable-tutorial
- Breakable Godot example
+ Breakable Godot objects
