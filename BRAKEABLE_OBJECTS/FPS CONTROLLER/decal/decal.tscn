@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dc21pdqyd77rg"]
+
+[ext_resource type="Script" path="res://FPS CONTROLLER/decal/bullet_hole.gd" id="1_81oye"]
+[ext_resource type="Texture2D" uid="uid://da7nrkumtyf4v" path="res://FPS CONTROLLER/decal/bullet-holes-png-22787.png" id="2_qqogg"]
+[ext_resource type="AudioStream" uid="uid://cj14itgabmow1" path="res://FPS CONTROLLER/decal/concrete_impact_bullet3.wav" id="3_ygldo"]
+[ext_resource type="AudioStream" uid="uid://d3l7mwv4kv10w" path="res://FPS CONTROLLER/decal/wood_solid_impact_bullet5.wav" id="4_bdmnf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqpu3"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[node name="decal" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_81oye")
+
+[node name="Decal" type="Decal" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+size = Vector3(0.2, 0.2, 0.2)
+texture_albedo = ExtResource("2_qqogg")
+cull_mask = 1048573
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_ygldo")
+max_polyphony = 1111
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_bdmnf")
+max_polyphony = 1111
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_dqpu3")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

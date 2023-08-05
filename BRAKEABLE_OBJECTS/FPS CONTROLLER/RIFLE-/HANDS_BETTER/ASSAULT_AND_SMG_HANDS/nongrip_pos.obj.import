@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dve2n0hgiq4rl"
+path="res://.godot/imported/nongrip_pos.obj-cb8666f0956f563ed1afe29d78528b9b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/nongrip_pos.obj-cb8666f0956f563ed1afe29d78528b9b.mesh"]
+
+source_file="res://FPS CONTROLLER/RIFLE-/HANDS_BETTER/ASSAULT_AND_SMG_HANDS/nongrip_pos.obj"
+dest_files=["res://.godot/imported/nongrip_pos.obj-cb8666f0956f563ed1afe29d78528b9b.mesh", "res://.godot/imported/nongrip_pos.obj-cb8666f0956f563ed1afe29d78528b9b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
