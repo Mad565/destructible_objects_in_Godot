@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cg823a1171co5"
+path="res://.godot/imported/TRIGGER_POS.obj-d07b8f03a4995beb68c5c5e6161791de.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TRIGGER_POS.obj-d07b8f03a4995beb68c5c5e6161791de.mesh"]
+
+source_file="res://FPS CONTROLLER/RIFLE-/HANDS_BETTER/SHOTGUN_POS/TRIGGER_POS.obj"
+dest_files=["res://.godot/imported/TRIGGER_POS.obj-d07b8f03a4995beb68c5c5e6161791de.mesh", "res://.godot/imported/TRIGGER_POS.obj-d07b8f03a4995beb68c5c5e6161791de.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3ln7vfijcxfa"]
+
+[ext_resource type="Script" path="res://BREAKABLE/BREAKABLE_SCRIPT.gd" id="1_uhsp7"]
+[ext_resource type="PackedScene" uid="uid://camkwyvn0kxle" path="res://BREAKABLE/BROKEN_BOX.tscn" id="2_kv8bg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yi3h6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3bu1v"]
+
+[node name="RigidBody3D" type="RigidBody3D" groups=["enemy"]]
+script = ExtResource("1_uhsp7")
+resource = ExtResource("2_kv8bg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_yi3h6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_3bu1v")
