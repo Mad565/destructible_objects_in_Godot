@@ -1,1 +1,1 @@
-destructible in Godot 4.1 
+DESTRUCTABLE IN GODOT 4.1 
